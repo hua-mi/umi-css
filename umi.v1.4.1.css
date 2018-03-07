@@ -1,0 +1,865 @@
+﻿/*
+    优米CSS点缀样式库 umi.css 1.4.1
+	解决web前端页面布局的最后一里路。在对web页面排版布局时，经常有琐碎的细节要自己另外写样式，优米CSS样式库将最常用的碎片样式整合起来，交统一了样式命名规则。可将umi.css理解为点缀样式库。
+	简单、易记、通用，是优米CSS样式库的设计风格，您可以应用在任何类型的Web项目中，并兼容所有版本的浏览器。
+	优米CSS免费开源，没有商业用途限制。
+	
+    Copyright (c) 2018 苏州华米软件 (http://hua-mi.cn)
+    Licensed under the MIT License (LICENSE.txt).
+*/
+
+/*元素框的类型*/
+.c_inline_b {
+    display: inline-block !important;
+}
+
+.c_table_cell {
+    display: table-cell;
+}
+
+.c_none {
+    display: none;
+}
+
+.c_absolute
+{
+    position:absolute;
+}
+
+.c_relative
+{
+    position:relative;
+}
+
+/*圆角*/
+.c_radi_2 {
+    border-radius: 2px !important;
+}
+
+.c_radi_4 {
+    border-radius: 4px !important;
+}
+
+.c_radi_6 {
+    border-radius: 6px !important;
+}
+
+.c_radi_8 {
+    border-radius: 8px !important;
+}
+
+.c_radi_12 {
+    border-radius: 12px !important;
+}
+
+.c_radi_15 {
+    border-radius: 15px !important;
+}
+
+.c_radi_30 {
+    border-radius: 30px !important;
+}
+
+/*字体变化:加粗,斜体,下划线*/
+.c_font_bold {
+    font-weight: bold !important;
+}
+
+.c_font_italic {
+    font-style: italic !important;
+}
+
+.c_text_ul {
+    text-decoration: underline !important;
+}
+
+/*文本字体大小*/
+.c_font_14 {
+    font-size: 14px !important;
+}
+
+.c_font_16 {
+    font-size: 16px !important;
+}
+
+.c_font_28 {
+    font-size: 28px !important;
+}
+
+._font_30 {
+    font-size: 30px !important;
+}
+
+.c_font_36 {
+    font-size: 36px !important;
+}
+
+.c_font_48 {
+    font-size: 48px !important;
+}
+
+/*文本水平对齐方式*/
+.c_text_right {
+    text-align: right !important;
+}
+
+.c_text_left {
+    text-align: left !important;
+}
+
+.c_text_center {
+    text-align: center !important;
+}
+
+/*文本颜色*/
+.c_text_red {
+    color: #FF0033 !important;
+}
+
+.c_text_red_p {
+    color: #CC3333 !important;
+}
+
+.c_text_red_m {
+    color: #FFCCCC !important;
+}
+
+.c_text_orange {
+    color: #FF6600 !important;
+}
+
+.c_text_orange_p {
+    color: #CC6600 !important;
+}
+
+.c_text_orange_m {
+    color: #FFCC99 !important;
+}
+
+.c_text_yellow {
+    color: #FFE800 !important;
+}
+
+.c_text_yellow_p {
+    color: #BBBB00 !important;
+}
+
+.c_text_yellow_m {
+    color: #FFFFCC !important;
+}
+
+.c_text_green {
+    color: #009300 !important;
+}
+
+.c_text_green_p {
+    color: #006633 !important;
+}
+
+.c_text_green_m {
+    color: #99CC99 !important;
+}
+
+.c_text_blue {
+    color: #1E9FFF !important;
+}
+
+.c_text_blue_p {
+    color: #006699 !important;
+}
+
+.c_text_blue_m {
+    color: #99CCFF !important;
+}
+
+.c_text_violet {
+    color: #884898 !important;
+}
+
+.c_text_violet_p {
+    color: #6e0f86 !important;
+}
+
+.c_text_violet_m {
+    color: #976aa2 !important;
+}
+
+.c_text_gray {
+    color: #666 !important;
+}
+
+.c_text_gray_p {
+    color: #393D49 !important;
+}
+
+.c_text_gray_m {
+    color: #C4C4C4 !important;
+}
+
+.c_text_white {
+    color: white !important;
+}
+
+/*背景色*/
+.c_bg_red {
+    background-color: #FF0033 !important;
+}
+
+.c_bg_red_p {
+    background-color: #CC3333 !important;
+}
+
+.c_bg_red_m {
+    background-color: #FFCCCC !important;
+}
+
+.c_bg_orange {
+    background-color: #FF6600 !important;
+}
+
+.c_bg_orange_p {
+    background-color: #CC6600 !important;
+}
+
+.c_bg_orange_m {
+    background-color: #FFCC99 !important;
+}
+
+.c_bg_yellow {
+    background-color: #FFE800 !important;
+}
+
+.c_bg_yellow_p {
+    background-color: #BBBB00 !important;
+}
+
+.c_bg_yellow_m {
+    background-color: #FFFFCC !important;
+}
+
+.c_bg_green {
+    background-color: #009300 !important;
+}
+
+.c_bg_green_p {
+    background-color: #006633 !important;
+}
+
+.c_bg_green_m {
+    background-color: #99CC99 !important;
+}
+
+.c_bg_blue {
+    background-color: #1E9FFF !important;
+}
+
+.c_bg_blue_p {
+    background-color: #006699 !important;
+}
+
+.c_bg_blue_m {
+    background-color: #99CCFF !important;
+}
+
+.c_bg_violet {
+    background-color: #884898 !important;
+}
+
+.c_bg_violet_p {
+    background-color: #6e0f86 !important;
+}
+
+.c_bg_violet_m {
+    background-color: #976aa2 !important;
+}
+
+.c_bg_gray {
+    background-color: #666 !important;
+}
+
+.c_bg_gray_p {
+    background-color: #393D49 !important;
+}
+
+.c_bg_gray_m {
+    background-color: #C4C4C4 !important;
+}
+
+.c_bg_white {
+    background-color: white !important;
+}
+
+/*边框颜色*/
+
+/*元素边框颜色*/
+/*.c_bord_gray {
+    border: 1px solid #cccccc !important;
+}
+
+.c_bord_green {
+    border: 1px solid rgb(36, 190, 110) !important;
+}*/
+
+.c_bord_red {
+    border: 1px solid #FF0033 !important;
+}
+
+.c_bord_red_p {
+    border: 1px solid #CC3333 !important;
+}
+
+.c_bord_red_m {
+    border: 1px solid #FFCCCC !important;
+}
+
+.c_bord_orange {
+    border: 1px solid #FF6600 !important;
+}
+
+.c_bord_orange_p {
+    border: 1px solid #CC6600 !important;
+}
+
+.c_bord_orange_m {
+    border: 1px solid #FFCC99 !important;
+}
+
+.c_bord_yellow {
+    border: 1px solid #FFE800 !important;
+}
+
+.c_bord_yellow_p {
+    border: 1px solid #BBBB00 !important;
+}
+
+.c_bord_yellow_m {
+    border: 1px solid #FFFFCC !important;
+}
+
+.c_bord_green {
+    border: 1px solid #009300 !important;
+}
+
+.c_bord_green_p {
+    border: 1px solid #006633 !important;
+}
+
+.c_bord_green_m {
+    border: 1px solid #99CC99 !important;
+}
+
+.c_bord_blue {
+    border: 1px solid #1E9FFF !important;
+}
+
+.c_bord_blue_p {
+    border: 1px solid #006699 !important;
+}
+
+.c_bord_blue_m {
+    border: 1px solid #99CCFF !important;
+}
+
+.c_bord_violet {
+    border: 1px solid #884898 !important;
+}
+
+.c_bord_violet_p {
+    border: 1px solid #6e0f86 !important;
+}
+
+.c_bord_violet_m {
+    border: 1px solid #976aa2 !important;
+}
+
+.c_bord_gray {
+    border: 1px solid #666 !important;
+}
+
+.c_bord_gray_p {
+    border: 1px solid #393D49 !important;
+}
+
+.c_bord_gray_m {
+    border: 1px solid #C4C4C4 !important;
+}
+
+.c_bord_white {
+    border: 1px solid white !important;
+}
+
+/*文字标签*/
+.c_h1 {
+    font-size: 30px !important;
+}
+
+/*元素内边距*/
+.c_padd_t_2, .c_padd_t_b_2, .c_padd_2 {
+    padding-top: 2px !important;
+}
+
+.c_padd_b_2, .c_padd_t_b_2, .c_padd_2 {
+    padding-bottom: 2px !important;
+}
+
+.c_padd_l_2, .c_padd_l_r_2, .c_padd_2 {
+    padding-left: 2px !important;
+}
+
+.c_padd_r_2, .c_padd_l_r_2, .c_padd_2 {
+    padding-right: 2px !important;
+}
+
+.c_padd_t_4, .c_padd_t_b_4, .c_padd_4 {
+    padding-top: 4px !important;
+}
+
+.c_padd_b_4, .c_padd_t_b_4, .c_padd_4 {
+    padding-bottom: 4px !important;
+}
+
+.c_padd_l_4, .c_padd_l_r_4, .c_padd_4 {
+    padding-left: 4px !important;
+}
+
+.c_padd_r_4, .c_padd_l_r_4, .c_padd_4 {
+    padding-right: 4px !important;
+}
+
+.c_padd_t_6, .c_padd_t_b_6, .c_padd_6 {
+    padding-top: 6px !important;
+}
+
+.c_padd_b_6, .c_padd_t_b_6, .c_padd_6 {
+    padding-bottom: 6px !important;
+}
+
+.c_padd_l_6, .c_padd_l_r_6, .c_padd_6 {
+    padding-left: 6px !important;
+}
+
+.c_padd_r_6, .c_padd_l_r_6, .c_padd_6 {
+    padding-right: 6px !important;
+}
+
+.c_padd_t_8, .c_padd_t_b_8, .c_padd_8 {
+    padding-top: 8px !important;
+}
+
+.c_padd_b_8, .c_padd_t_b_8, .c_padd_8 {
+    padding-bottom: 8px !important;
+}
+
+.c_padd_l_8, .c_padd_l_r_8, .c_padd_8 {
+    padding-left: 8px !important;
+}
+
+.c_padd_r_8, .c_padd_l_r_8, .c_padd_8 {
+    padding-right: 8px !important;
+}
+
+.c_padd_t_10, .c_padd_t_b_10, .c_padd_10 {
+    padding-top: 10px !important;
+}
+
+.c_padd_b_10, .c_padd_t_b_10, .c_padd_10 {
+    padding-bottom: 10px !important;
+}
+
+.c_padd_l_10, .c_padd_l_r_10, .c_padd_10 {
+    padding-left: 10px !important;
+}
+
+.c_padd_r_10, .c_padd_l_r_10, .c_padd_10 {
+    padding-right: 10px !important;
+}
+
+.c_padd_t_20, .c_padd_t_b_20, .c_padd_20 {
+    padding-top: 20px !important;
+}
+
+.c_padd_b_20, .c_padd_t_b_20, .c_padd_20 {
+    padding-bottom: 20px !important;
+}
+
+.c_padd_l_20, .c_padd_l_r_20, .c_padd_20 {
+    padding-left: 20px !important;
+}
+
+.c_padd_r_20, .c_padd_l_r_20, .c_padd_20 {
+    padding-right: 20px !important;
+}
+
+.c_padd_t_30, .c_padd_t_b_30, .c_padd_30 {
+    padding-top: 30px !important;
+}
+
+.c_padd_b_30, .c_padd_t_b_30, .c_padd_30 {
+    padding-bottom: 30px !important;
+}
+
+.c_padd_l_30, .c_padd_l_r_30, .c_padd_30 {
+    padding-left: 30px !important;
+}
+
+.c_padd_r_30, .c_padd_l_r_30, .c_padd_30 {
+    padding-right: 30px !important;
+}
+
+.c_padd_t_50, .c_padd_t_b_50, .c_padd_50 {
+    padding-top: 50px !important;
+}
+
+.c_padd_b_50, .c_padd_t_b_50, .c_padd_50 {
+    padding-bottom: 50px !important;
+}
+
+.c_padd_l_50, .c_padd_l_r_50, .c_padd_50 {
+    padding-left: 50px !important;
+}
+
+.c_padd_r_50, .c_padd_l_r_50, .c_padd_50 {
+    padding-right: 50px !important;
+}
+
+.c_padd_2_8 {
+    padding: 2px 8px !important;
+}
+
+.c_padd_4_8 {
+    padding: 4px 8px !important;
+}
+
+.c_padd_6_8 {
+    padding: 6px 8px !important;
+}
+
+.c_padd_2_10 {
+    padding: 2px 10px !important;
+}
+
+.c_padd_4_10 {
+    padding: 4px 10px !important;
+}
+
+.c_padd_6_10 {
+    padding: 6px 10px !important;
+}
+
+.c_padd_8_10 {
+    padding: 8px 10px !important;
+}
+
+.c_padd_2_16 {
+    padding: 2px 16px !important;
+}
+
+.c_padd_4_16 {
+    padding: 4px 16px !important;
+}
+
+.c_padd_6_16 {
+    padding: 6px 16px !important;
+}
+
+.c_padd_8_16 {
+    padding: 8px 16px !important;
+}
+
+/*元素外边距*/
+.c_marg_l_2, .c_marg_l_r_2, .c_marg_2 {
+    margin-left: 2px !important;
+}
+
+.c_marg_r_2, .c_marg_l_r_2, .c_marg_2 {
+    margin-right: 2px !important;
+}
+
+.c_marg_t_2, .c_marg_t_b_2, .c_marg_2 {
+    margin-top: 2px !important;
+}
+
+.c_marg_b_2, .c_marg_t_b_2, .c_marg_2 {
+    margin-bottom: 2px !important;
+}
+
+.c_marg_l_4, .c_marg_l_r_4, .c_marg_4 {
+    margin-left: 4px !important;
+}
+
+.c_marg_r_4, .c_marg_l_r_4, .c_marg_4 {
+    margin-right: 4px !important;
+}
+
+.c_marg_t_4, .c_marg_t_b_4, .c_marg_4 {
+    margin-top: 4px !important;
+}
+
+.c_marg_b_4, .c_marg_t_b_4, .c_marg_4 {
+    margin-bottom: 4px !important;
+}
+
+.c_marg_l_6, .c_marg_l_r_6, .c_marg_6 {
+    margin-left: 6px !important;
+}
+
+.c_marg_r_6, .c_marg_l_r_6, .c_marg_6 {
+    margin-right: 6px !important;
+}
+
+.c_marg_t_6, .c_marg_t_b_6, .c_marg_6 {
+    margin-top: 6px !important;
+}
+
+.c_marg_b_6, .c_marg_t_b_6, .c_marg_6 {
+    margin-bottom: 6px !important;
+}
+
+.c_marg_l_8, .c_marg_l_r_8, .c_marg_8 {
+    margin-left: 8px !important;
+}
+
+.c_marg_r_8, .c_marg_l_r_8, .c_marg_8 {
+    margin-right: 8px !important;
+}
+
+.c_marg_t_8, .c_marg_t_b_8, .c_marg_8 {
+    margin-top: 8px !important;
+}
+
+.c_marg_b_8, .c_marg_t_b_8, .c_marg_8 {
+    margin-bottom: 8px !important;
+}
+
+.c_marg_l_10, .c_marg_l_r_10, .c_marg_10 {
+    margin-left: 10px !important;
+}
+
+.c_marg_r_10, .c_marg_l_r_10, .c_marg_10 {
+    margin-right: 10px !important;
+}
+
+.c_marg_t_10, .c_marg_t_b_10, .c_marg_10 {
+    margin-top: 10px !important;
+}
+
+.c_marg_b_10, .c_marg_t_b_10, .c_marg_10 {
+    margin-bottom: 10px !important;
+}
+
+.c_marg_l_20, .c_marg_l_r_20, .c_marg_20 {
+    margin-left: 20px !important;
+}
+
+.c_marg_r_20, .c_marg_l_r_20, .c_marg_20 {
+    margin-right: 20px !important;
+}
+
+.c_marg_t_20, .c_marg_t_b_20, .c_marg_20 {
+    margin-top: 20px !important;
+}
+
+.c_marg_b_20, .c_marg_t_b_20, .c_marg_20 {
+    margin-bottom: 20px !important;
+}
+
+.c_marg_l_30, .c_marg_l_r_30, .c_marg_30 {
+    margin-left: 30px !important;
+}
+
+.c_marg_r_30, .c_marg_l_r_30, .c_marg_30 {
+    margin-right: 30px !important;
+}
+
+.c_marg_t_30, .c_marg_t_b_30, .c_marg_30 {
+    margin-top: 30px !important;
+}
+
+.c_marg_b_30, .c_marg_t_b_30, .c_marg_30 {
+    margin-bottom: 30px !important;
+}
+
+/*元素行高*/
+.c_line_h_1p5 {
+    line-height: 1.5 !important;
+}
+
+.c_line_h_2 {
+    line-height: 2 !important;
+}
+
+.c_line_h_2p5 {
+    line-height: 2.5 !important;
+}
+
+.c_line_h_3 {
+    line-height: 3 !important;
+}
+
+/*元素浮动清除*/
+.c_clea_l {
+    clear: left !important;
+}
+
+.c_clea_r {
+    clear: right !important;
+}
+
+/*元素浮动*/
+.c_left {
+    float: left !important;
+}
+
+.c_right {
+    float: right !important;
+}
+
+/*元素的垂直对齐方式*/
+.c_vert_midd {
+    vertical-align: middle !important;
+}
+
+.c_vert_bott {
+    vertical-align: bottom !important;
+}
+
+.c_vert_top {
+    vertical-align: top !important;
+}
+
+/*内容溢出元素框样式*/
+.c_over_auto {
+    overflow: auto;
+}
+
+.c_over_y_auto {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.c_over_x_auto {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.c_over_hidden {
+    overflow: hidden;
+}
+
+.c_text_over_elli {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/*.c_over_y_hidden {
+    overflow-y: hidden;
+}
+
+.c_over_x_hidden {
+    overflow-x: hidden;
+}*/
+
+/*列表项标记的类型*/
+.c_ul_disc li {
+    list-style-type: disc !important;
+}
+
+.c_ul_deci li {
+    list-style-type: decimal !important;
+}
+
+.c_ul_squa li {
+    list-style-type: square !important;
+}
+
+.c_ul_lower_a li {
+    list-style-type: lower-alpha !important;
+}
+
+.c_ul_upper_a li {
+    list-style-type: upper-alpha !important;
+}
+
+.c_ul_list_item li {
+    display: list-item !important;
+}
+
+/*元素高度百分比*/
+.c_h_100p {
+    height: 100%;
+}
+
+/*a连接*/
+.c_a_yellow a {
+    color: #d2c4a0 !important;
+}
+
+    .c_a_yellow a:hover, .c_a_yellow a:focus {
+        text-decoration: underline;
+    }
+
+/*------------以下为组件样式-----------------------------------------------------------------------------------------------*/
+/*按钮内边距*/
+.cc_btn {
+    padding: 8px 10px;
+}
+
+.cc_btn_m {
+    padding: 6px 10px;
+}
+
+.cc_btn_m2 {
+    padding: 4px 10px;
+}
+/*按钮公共样式*/
+.cc_btn, .cc_btn_m, .cc_btn_m2 {
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    display: inline-block;
+}
+
+    .cc_btn:hover, .cc_btn_m:hover, .cc_btn_m2:hover {
+        opacity: .8;
+        -webkit-filter: contrast(110%);
+        filter: contrast(110%);
+    }
+
+    .cc_btn:active, .cc_btn_m:active, .cc_btn_m2:active {
+        opacity: .8;
+        -webkit-filter: contrast(110%);
+        filter: contrast(110%);
+    }
+/*按钮背景色与边框色*/
+.cc_btn_green {
+    border: 1px solid rgb(36, 190, 110);
+    background-color: rgb(36, 190, 110);
+}
+
+.cc_btn_orange {
+    border: 1px solid rgb(255, 122, 0);
+    background-color: rgb(255, 122, 0);
+}
+
+.cc_btn_blue {
+    border: 1px solid rgb(0, 173, 255);
+    background-color: rgb(0, 173, 255);
+}
+    /*按钮鼠标悬停样式*/
+    .cc_btn_green, .cc_btn_green *, .cc_btn_green:hover, .cc_btn_orange, .cc_btn_orange *, .cc_btn_orange:hover,
+    .cc_btn_blue, .cc_btn_blue *, .cc_btn_blue:hover {
+        color: white !important;
+    }
+
+/*标注样式*/
+.cc_label {
+    display: block;
+    padding: 8px;
+    background-color: #F7F7F7;
+    border-left: 2px solid #B2B2B2;
+}
+
+.cc_label_must {
+    border-left: 2px solid #ff6b24 !important;
+}

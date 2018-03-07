@@ -1,0 +1,1268 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>优米CSS点缀样式库(umi.css)官网</title>
+    <meta name="Author" content="苏州华米软件(hua-mi.cn)" />
+    <link rel="shortcut icon" href="content/images/umi.css-logo-v1.ico" />
+    <link rel="stylesheet" type="text/css" href="umi.v1.4.1.css">
+    <link rel="stylesheet" type="text/css" href="layui/css/layui.css">
+    <style type="text/css">
+        .c_width_200 {
+            width: 200px;
+        }
+
+        .c_width_100 {
+            width: 100px;
+        }
+
+        .c_width_150 {
+            width: 150px;
+        }
+
+        .c_heigth_50 {
+            height: 50px;
+        }
+
+        .c_heigth_100 {
+            height: 100px;
+        }
+
+        .c_demo ul li {
+            display: inline-block;
+            margin: 6px 4px;
+            font-size: 14px;
+            /*text-align: center;*/
+            vertical-align: top;
+        }
+
+        li p {
+            margin: 5px 0px;
+            color: gray;
+        }
+
+        h1 {
+            font-size: 16pt;
+            margin: 10px 4px;
+        }
+
+        body {
+            font-family: "微软雅黑";
+        }
+
+        .c_header {
+            height: 60px;
+            /*width: auto;*/
+            /*margin: 0 15px;*/
+            background-color: #23262E;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            top: 0px;
+        }
+
+            .c_header .c_content {
+                margin: 0 15px;
+                position: relative;
+            }
+
+        .c_left_panel {
+            position: fixed;
+            top: 60px;
+            bottom: 0px;
+        }
+
+        .c_demo {
+            margin-top: 60px;
+        }
+
+            .c_demo h1 {
+                padding-top: 55px;
+            }
+
+        .c_header .layui-nav {
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 0;
+            background: none;
+        }
+
+        .c_text_indent_26 p {
+            text-indent: 26px;
+        }
+    </style>
+</head>
+<body>
+    <div class="c_header" style="z-index:1000">
+        <div class="c_content">
+            <img src="content/images/umi.css-logo-v1.png" style="height:45px" />
+            <h1 class="c_inline_b">优米CSS点缀样式库(umi.css)</h1>
+            <ul class="layui-nav">
+                <li class="layui-nav-item"><a href="#about">关于umi.css</a></li>
+                <li class="layui-nav-item"><a href="#download">下载</a></li>
+                <li class="layui-nav-item"><a href="http://app.you-mi.cn/Home/Search/开源项目" target="_blank">社区</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="c_left_panel layui-bg-black c_over_auto">
+        <ul class="layui-nav layui-nav-tree">
+            <li class="layui-nav-item layui-nav-itemed">
+                <a href="javascript:;">点缀样式</a>
+                <dl class="layui-nav-child">
+                    <dd class="layui-this"><a href="#c_radi">圆角</a></dd>
+                    <dd><a href="#c_bg">背景色</a></dd>
+                    <dd><a href="#c_border_color">边框色</a></dd>
+                    <dd><a href="#c_color">文本颜色</a></dd>
+                    <dd><a href="#c_text">内容对齐</a></dd>
+                    <dd><a href="#c_font">字体变化</a></dd>
+                    <dd><a href="#c_font_size">字体大小</a></dd>
+                    <dd><a href="#c_padd">内边距</a></dd>
+                    <dd><a href="#c_marg">外边距</a></dd>
+                    <dd><a href="#c_posi">定位</a></dd>
+                    <dd><a href="#c_float">元素浮动</a></dd>
+                    <dd><a href="#c_line_h">行高</a></dd>
+                    <dd><a href="#c_over">内容溢出显示方式</a></dd>
+                    <dd><a href="#c_ul_list">列表序号</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item">
+                <a href="javascript:;">组件样式</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="#cc_btn">按钮组件</a></dd>
+                    <dd><a href="#cc_label">标签组件</a></dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+    <div id="about" style="margin-left:220px" class="c_demo">
+        <blockquote class="layui-elem-quote c_marg_10 c_line_h_2 c_text_indent_26">
+            <h2>优米CSS点缀样式库(umi.css)</h2>
+            <p>
+                umi.css解决web前端页面布局的最后一里路。在对web页面排版布局时，经常有琐碎的细节要另外写样式，umi.css样式库将最常用的碎片样式整合起来，并统一了样式命名规则。
+                可将umi.css理解为点缀样式库。
+            </p>
+            <p>umi.css可与任何web框架结合使用。</p>
+            <p>
+                简单、易记、通用，是优米CSS样式库的设计风格，您可以应用在任何类型的Web项目中，并兼容所有版本的浏览器。
+                优米CSS免费开源，没有商业用途限制。
+            </p>
+        </blockquote>
+        <blockquote class="layui-elem-quote c_marg_10 c_line_h_2" style="">
+            <h2>umi.css命名规则</h2>
+            <p class="c_text_gray">umi.css的命名规则是由超过10年开发经验的工程师设计，并兼顾了英文不太好的开发者。</p>
+            <ul class="c_ul_list_item">
+                <li><span class="c_text_red_p">规则1：</span>所有点缀样式以c_开头，所有组件样式以cc_开头。umi.css并不像其它著名的样式库一样硬性以库名称为前缀。c是常用(common)的英文前缀，cc是常用组件(common component)的英文前缀。</li>
+                <li><span class="c_text_red_p">规则2：</span>取样式名称中最有代表性的单词，一看便知样式的效果。如"c_text_left"即"text-align:left"，text_left直译就是文本在左边的意思，因此去掉了align这个单词。</li>
+                <li><span class="c_text_red_p">规则3：</span>取样式英文的前4个字符，简化名称长度，且不影响可阅读性。如"c_padd_4"即"padding:4px"。</li>
+                <li><span class="c_text_red_p">规则4：</span>上下左右并行样式。如"c_padd_4_10"即"padding:4px 10px"。</li>
+                <li><span class="c_text_red_p">规则5：</span>取极为常见的英文首字母。如上=t，下=b，左=l，右=r，背景background=bg</li>
+                <li><span class="c_text_red_p">规则6：</span>后缀有_p表示效果增强或加大(plus)，有_m表示效果减弱或减小(minus)。如c_red_p表示深红色，c_red_m表示浅红色。</li>
+
+            </ul>
+            <p>如果您要对umi.css进行拓展，建议您新建一个样式文件umi.ext.css，这样当umi.css有更新时，不会影响您自己拓展的样式。</p>
+            <p>就算您不打算使用umi.css，但umi.css的命名规则可以由您选择性应用在您的项目中。</p>
+
+        </blockquote>
+        <h1 id="c_radi">圆角</h1>
+        <hr class="layui-bg-gray">
+        <ul>
+            <li>
+                <p>圆角2px：</p>
+                <div class="c_radi_2 c_bg_blue c_text_white c_padd_6_10">
+                    c_radi_2
+                </div>
+            </li>
+            <li>
+                <p>圆角4px：</p>
+                <div class="c_radi_4 c_bg_blue c_text_white c_padd_6_10">
+                    c_radi_4
+                </div>
+            </li>
+            <li>
+                <p>圆角6px：</p>
+                <div class="c_radi_6 c_bg_blue c_text_white c_padd_6_10">
+                    c_radi_6
+                </div>
+            </li>
+            <li>
+                <p>圆角8px：</p>
+                <div class="c_radi_8 c_bg_blue c_text_white c_padd_6_10">
+                    c_radi_8
+                </div>
+            </li>
+            <li>
+                <p>圆角12px：</p>
+                <div class="c_radi_12 c_bg_blue c_text_white c_padd_6_10">
+                    c_radi_12
+                </div>
+            </li>
+            <li>
+                <p>圆角15px：</p>
+                <div class="c_radi_15 c_bg_blue c_text_white c_padd_6_10">
+                    c_radi_15
+                </div>
+            </li>
+            <li>
+                <p>圆角30px：</p>
+                <div class="c_radi_30 c_bg_blue c_text_white c_padd_8_16">
+                    c_radi_30
+                </div>
+            </li>
+
+        </ul>
+
+        <h1 id="c_bg">背景色</h1>
+        <hr class="layui-bg-gray">
+        <div>
+            <blockquote class="layui-elem-quote">规则说明：后缀有_p表示色调加深(plus)，后缀有_m表示色调减淡(minus)。</blockquote>
+            <ul>
+                <li>
+                    <p>red(红)：</p>
+                    <div class="c_bg_red c_text_white c_radi_15 c_padd_6_10">
+                        c_bg_red
+                    </div>
+                </li>
+                <li>
+                    <p>orange(橙)：</p>
+                    <div class="c_bg_orange c_text_white c_radi_15 c_padd_6_10">
+                        c_bg_orange
+                    </div>
+                </li>
+                <li>
+                    <p>yellow(黄)：</p>
+                    <div class="c_bg_yellow c_text_gray c_radi_15 c_padd_6_10">
+                        c_bg_yellow
+                    </div>
+                </li>
+                <li>
+                    <p>green(绿)：</p>
+                    <div class="c_bg_green c_text_white c_radi_15 c_padd_6_10">
+                        c_bg_green
+                    </div>
+                </li>
+                <li>
+                    <p>blue(蓝)：</p>
+                    <div class="c_bg_blue c_text_white c_radi_15 c_padd_6_10">
+                        c_bg_blue
+                    </div>
+                </li>
+                <li>
+                    <p>violet(紫)：</p>
+                    <div class="c_bg_violet c_text_white c_radi_15 c_padd_6_10">
+                        c_bg_violet
+                    </div>
+                </li>
+                <li>
+                    <p>gray(灰)：</p>
+                    <div class="c_bg_gray c_text_white c_radi_15 c_padd_6_10">
+                        c_bg_gray
+                    </div>
+                </li>
+                <li>
+                    <p>white(白)：</p>
+                    <div class="c_bg_white c_text_gray c_bord_gray_m c_radi_15 c_padd_6_10">
+                        c_bg_white
+                    </div>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <p>red(红加深)：</p>
+                    <div class="c_bg_red_p c_text_white c_radi_15 c_padd_6_10">
+                        c_bg_red_p
+                    </div>
+                </li>
+                <li>
+                    <p>orange(橙加深)：</p>
+                    <div class="c_bg_orange_p c_text_white c_radi_15 c_padd_6_10">
+                        c_bg_orange_p
+                    </div>
+                </li>
+                <li>
+                    <p>yellow(黄加深)：</p>
+                    <div class="c_bg_yellow_p c_text_white c_radi_15 c_padd_6_10">
+                        c_bg_yellow_p
+                    </div>
+                </li>
+                <li>
+                    <p>green(绿加深)：</p>
+                    <div class="c_bg_green_p c_text_white c_radi_15 c_padd_6_10">
+                        c_bg_green_p
+                    </div>
+                </li>
+                <li>
+                    <p>blue(蓝加深)：</p>
+                    <div class="c_bg_blue_p c_text_white c_radi_15 c_padd_6_10">
+                        c_bg_blue_p
+                    </div>
+                </li>
+                <li>
+                    <p>violet(紫加深)：</p>
+                    <div class="c_bg_violet_p c_text_white c_radi_15 c_padd_6_10">
+                        c_bg_violet_p
+                    </div>
+                </li>
+                <li>
+                    <p>gray(灰加深)：</p>
+                    <div class="c_bg_gray_p c_text_white c_radi_15 c_padd_6_10">
+                        c_bg_gray_p
+                    </div>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <p>red(红变淡)：</p>
+                    <div class="c_bg_red_m c_text_white c_radi_15 c_padd_6_10">
+                        c_bg_red_m
+                    </div>
+                </li>
+                <li>
+                    <p>orange(橙变淡)：</p>
+                    <div class="c_bg_orange_m c_text_white c_radi_15 c_padd_6_10">
+                        c_bg_orange_m
+                    </div>
+                </li>
+                <li>
+                    <p>yellow(黄变淡)：</p>
+                    <div class="c_bg_yellow_m c_text_gray c_radi_15 c_padd_6_10">
+                        c_bg_yellow_m
+                    </div>
+                </li>
+                <li>
+                    <p>green(绿变淡)：</p>
+                    <div class="c_bg_green_m c_text_white c_radi_15 c_padd_6_10">
+                        c_bg_green_m
+                    </div>
+                </li>
+                <li>
+                    <p>blue(蓝变淡)：</p>
+                    <div class="c_bg_blue_m c_text_white c_radi_15 c_padd_6_10">
+                        c_bg_blue_m
+                    </div>
+                </li>
+                <li>
+                    <p>violet(紫变淡)：</p>
+                    <div class="c_bg_violet_m c_text_white c_radi_15 c_padd_6_10">
+                        c_bg_violet_m
+                    </div>
+                </li>
+                <li>
+                    <p>gray(灰变淡)：</p>
+                    <div class="c_bg_gray_m c_text_white c_radi_15 c_padd_6_10">
+                        c_bg_gray_m
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <h1 id="c_border_color">边框色</h1>
+        <hr class="layui-bg-gray">
+        <div>
+            <blockquote class="layui-elem-quote">规则说明：后缀有_p表示色调加深(plus)，后缀有_m表示色调减淡(minus)。</blockquote>
+            <ul>
+                <li>
+                    <p>red(红)：</p>
+                    <div class="c_bord_red c_text_gray c_radi_15 c_padd_6_10">
+                        c_bord_red
+                    </div>
+                </li>
+                <li>
+                    <p>orange(橙)：</p>
+                    <div class="c_bord_orange c_text_gray c_radi_15 c_padd_6_10">
+                        c_bord_orange
+                    </div>
+                </li>
+                <li>
+                    <p>yellow(黄)：</p>
+                    <div class="c_bord_yellow c_text_gray c_radi_15 c_padd_6_10">
+                        c_bord_yellow
+                    </div>
+                </li>
+                <li>
+                    <p>green(绿)：</p>
+                    <div class="c_bord_green c_text_gray c_radi_15 c_padd_6_10">
+                        c_bord_green
+                    </div>
+                </li>
+                <li>
+                    <p>blue(蓝)：</p>
+                    <div class="c_bord_blue c_text_gray c_radi_15 c_padd_6_10">
+                        c_bord_blue
+                    </div>
+                </li>
+                <li>
+                    <p>violet(紫)：</p>
+                    <div class="c_bord_violet c_text_gray c_radi_15 c_padd_6_10">
+                        c_bord_violet
+                    </div>
+                </li>
+                <li>
+                    <p>gray(灰)：</p>
+                    <div class="c_bord_gray c_text_gray c_radi_15 c_padd_6_10">
+                        c_bord_gray
+                    </div>
+                </li>
+                <li class="c_bg_blue c_text_white c_radi_4 c_padd_6_10">
+                    <p>white(白)：</p>
+                    <div class="c_bord_white c_bord_gray_m c_radi_15 c_padd_6_10">
+                        c_bord_white
+                    </div>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <p>red(红加深)：</p>
+                    <div class="c_bord_red_p c_text_gray c_radi_15 c_padd_6_10">
+                        c_bord_red_p
+                    </div>
+                </li>
+                <li>
+                    <p>orange(橙加深)：</p>
+                    <div class="c_bord_orange_p c_text_gray c_radi_15 c_padd_6_10">
+                        c_bord_orange_p
+                    </div>
+                </li>
+                <li>
+                    <p>yellow(黄加深)：</p>
+                    <div class="c_bord_yellow_p c_text_gray c_radi_15 c_padd_6_10">
+                        c_bord_yellow_p
+                    </div>
+                </li>
+                <li>
+                    <p>green(绿加深)：</p>
+                    <div class="c_bord_green_p c_text_gray c_radi_15 c_padd_6_10">
+                        c_bord_green_p
+                    </div>
+                </li>
+                <li>
+                    <p>blue(蓝加深)：</p>
+                    <div class="c_bord_blue_p c_text_gray c_radi_15 c_padd_6_10">
+                        c_bord_blue_p
+                    </div>
+                </li>
+                <li>
+                    <p>violet(紫加深)：</p>
+                    <div class="c_bord_violet_p c_text_gray c_radi_15 c_padd_6_10">
+                        c_bord_violet_p
+                    </div>
+                </li>
+                <li>
+                    <p>gray(灰加深)：</p>
+                    <div class="c_bord_gray_p c_text_gray c_radi_15 c_padd_6_10">
+                        c_bord_gray_p
+                    </div>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <p>red(红变淡)：</p>
+                    <div class="c_bord_red_m c_text_gray c_radi_15 c_padd_6_10">
+                        c_bord_red_m
+                    </div>
+                </li>
+                <li>
+                    <p>orange(橙变淡)：</p>
+                    <div class="c_bord_orange_m c_text_gray c_radi_15 c_padd_6_10">
+                        c_bord_orange_m
+                    </div>
+                </li>
+                <li>
+                    <p>yellow(黄变淡)：</p>
+                    <div class="c_bord_yellow_m c_text_gray c_radi_15 c_padd_6_10">
+                        c_bord_yellow_m
+                    </div>
+                </li>
+                <li>
+                    <p>green(绿变淡)：</p>
+                    <div class="c_bord_green_m c_text_gray c_radi_15 c_padd_6_10">
+                        c_bord_green_m
+                    </div>
+                </li>
+                <li>
+                    <p>blue(蓝变淡)：</p>
+                    <div class="c_bord_blue_m c_text_gray c_radi_15 c_padd_6_10">
+                        c_bord_blue_m
+                    </div>
+                </li>
+                <li>
+                    <p>violet(紫变淡)：</p>
+                    <div class="c_bord_violet_m c_text_gray c_radi_15 c_padd_6_10">
+                        c_bord_violet_m
+                    </div>
+                </li>
+                <li>
+                    <p>gray(灰变淡)：</p>
+                    <div class="c_bord_gray_m c_text_gray c_radi_15 c_padd_6_10">
+                        c_bord_gray_m
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <h1 id="c_color">文本颜色</h1>
+        <hr class="layui-bg-gray">
+        <div>
+            <ul>
+                <li>
+                    <p>red(红)：</p>
+                    <div class="c_text_red c_bord_gray_m c_padd_6_10">
+                        c_text_red
+                    </div>
+                </li>
+                <li>
+                    <p>orange(橙)：</p>
+                    <div class="c_text_orange c_bord_gray_m c_padd_6_10">
+                        c_text_orange
+                    </div>
+                </li>
+                <li>
+                    <p>yellow(黄)：</p>
+                    <div class="c_text_yellow c_bord_gray_m c_padd_6_10">
+                        c_text_yellow
+                    </div>
+                </li>
+
+                <li>
+                    <p>green(绿)：</p>
+                    <div class="c_text_green c_bord_gray_m c_padd_6_10">
+                        c_text_green
+                    </div>
+                </li>
+                <li>
+                    <p>blue(蓝)：</p>
+                    <div class="c_text_blue c_bord_gray_m c_padd_6_10">
+                        c_text_blue
+                    </div>
+                </li>
+                <li>
+                    <p>violet(紫)：</p>
+                    <div class="c_text_violet c_bord_gray_m c_padd_6_10">
+                        c_text_violet
+                    </div>
+                </li>
+                <li>
+                    <p>gray(灰)：</p>
+                    <div class="c_text_gray c_bord_gray_m c_padd_6_10">
+                        c_text_gray
+                    </div>
+                </li>
+                <li>
+                    <p>white(白)：</p>
+                    <div class="c_text_white c_bg_blue c_bord_gray_m c_padd_6_10">
+                        c_text_white
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <p>red(红加深)：</p>
+                    <div class="c_text_red_p c_bord_gray_m c_padd_6_10">
+                        c_text_red_p
+                    </div>
+                </li>
+                <li>
+                    <p>orange(橙加深)：</p>
+                    <div class="c_text_orange_p c_bord_gray_m c_padd_6_10">
+                        c_text_orange_p
+                    </div>
+                </li>
+                <li>
+                    <p>yellow(黄加深)：</p>
+                    <div class="c_text_yellow_p c_bord_gray_m c_padd_6_10">
+                        c_text_yellow_p
+                    </div>
+                </li>
+
+                <li>
+                    <p>green(绿加深)：</p>
+                    <div class="c_text_green_p c_bord_gray_m c_padd_6_10">
+                        c_text_green_p
+                    </div>
+                </li>
+                <li>
+                    <p>blue(蓝加深)：</p>
+                    <div class="c_text_blue_p c_bord_gray_m c_padd_6_10">
+                        c_text_blue_p
+                    </div>
+                </li>
+                <li>
+                    <p>violet(紫加深)：</p>
+                    <div class="c_text_violet_p c_bord_gray_m c_padd_6_10">
+                        c_text_violet_p
+                    </div>
+                </li>
+                <li>
+                    <p>gray(灰加深)：</p>
+                    <div class="c_text_gray_p c_bord_gray_m c_padd_6_10">
+                        c_text_gray_p
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <p>red(红变淡)：</p>
+                    <div class="c_text_red_m c_bg_gray_p c_padd_6_10">
+                        c_text_red_m
+                    </div>
+                </li>
+                <li>
+                    <p>orange(橙变淡)：</p>
+                    <div class="c_text_orange_m c_bg_gray_p c_padd_6_10">
+                        c_text_orange_m
+                    </div>
+                </li>
+                <li>
+                    <p>yellow(黄变淡)：</p>
+                    <div class="c_text_yellow_m c_bg_gray_p c_padd_6_10">
+                        c_text_yellow_m
+                    </div>
+                </li>
+
+                <li>
+                    <p>green(绿变淡)：</p>
+                    <div class="c_text_green_m c_bg_gray_p c_padd_6_10">
+                        c_text_green_m
+                    </div>
+                </li>
+                <li>
+                    <p>blue(蓝变淡)：</p>
+                    <div class="c_text_blue_m c_bg_gray_p c_padd_6_10">
+                        c_text_blue_m
+                    </div>
+                </li>
+                <li>
+                    <p>violet(紫变淡)：</p>
+                    <div class="c_text_violet_m c_bg_gray_p c_padd_6_10">
+                        c_text_violet_m
+                    </div>
+                </li>
+                <li>
+                    <p>gray(灰变淡)：</p>
+                    <div class="c_text_gray_m c_bg_gray_p c_padd_6_10">
+                        c_text_gray_m
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <h1 id="c_text">内容对齐</h1>
+        <hr class="layui-bg-gray">
+        <div>
+            <ul>
+                <li>
+                    <p>文本左对齐：</p>
+                    <div class="c_text_left c_bord_gray_m c_padd_6_10 c_width_200">
+                        c_text_left
+                    </div>
+                </li>
+                <li>
+                    <p>文本居中：</p>
+                    <div class="c_text_center c_bord_gray_m c_padd_6_10 c_width_200">
+                        c_text_center
+                    </div>
+                </li>
+                <li>
+                    <p>文本右对齐：</p>
+                    <div class="c_text_right c_bord_gray_m c_padd_6_10 c_width_200">
+                        c_text_right
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <p>上对齐：</p>
+                    <div class="c_table_cell c_vert_top c_bord_gray_m c_padd_6_10 c_heigth_50">
+                        c_vert_top
+                    </div>
+                </li>
+                <li>
+                    <p>垂直居中：</p>
+                    <div class="c_table_cell c_vert_midd c_bord_gray_m c_padd_6_10 c_heigth_50">
+                        c_vert_midd
+                    </div>
+                </li>
+                <li>
+                    <p>下对齐：</p>
+                    <div class="c_table_cell c_vert_bott c_bord_gray_m c_padd_6_10 c_heigth_50">
+                        c_vert_bott
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <h1 id="c_font">字体变化</h1>
+        <hr class="layui-bg-gray">
+        <ul>
+            <li>
+                <p>字体加粗：</p>
+                <div class="c_font_bold c_bord_gray_m c_padd_6_10">
+                    c_font_bold
+                </div>
+            </li>
+            <li>
+                <p>斜体：</p>
+                <div class="c_font_italic c_bord_gray_m c_padd_6_10">
+                    c_font_italic
+                </div>
+            </li>
+            <li>
+                <p>下划线：</p>
+                <div class="c_text_ul c_bord_gray_m c_padd_6_10">
+                    c_text_ul
+                </div>
+            </li>
+        </ul>
+        <h1 id="c_font_size">字体大小</h1>
+        <hr class="layui-bg-gray">
+        <ul>
+            <li>
+                <p>14px：</p>
+                <div class="c_font_14 c_bord_gray_m c_padd_6_10">
+                    c_font_14
+                </div>
+            </li>
+            <li>
+                <p>16px：</p>
+                <div class="c_font_16 c_bord_gray_m c_padd_6_10">
+                    c_font_16
+                </div>
+            </li>
+            <li>
+                <p>28px：</p>
+                <div class="c_font_28 c_bord_gray_m c_padd_6_10">
+                    c_font_28
+                </div>
+            </li>
+            <li>
+                <p>30px：</p>
+                <div class="_font_30 c_bord_gray_m c_padd_6_10">
+                    c_font_30
+                </div>
+            </li>
+            <li>
+                <p>36px：</p>
+                <div class="c_font_36 c_bord_gray_m c_padd_6_10">
+                    c_font_36
+                </div>
+            </li>
+            <li>
+                <p>48px：</p>
+                <div class="c_font_48 c_bord_gray_m c_padd_6_10">
+                    c_font_48
+                </div>
+            </li>
+        </ul>
+
+        <h1 id="c_padd">内边距</h1>
+        <hr class="layui-bg-gray">
+        <div>
+            <ul>
+                <li>
+                    <p>2px 8px(上下 左右)：</p>
+                    <p class="c_padd_2_8 c_bg_blue c_text_white">
+                        c_padd_2_8
+                    </p>
+                </li>
+                <li>
+                    <p>4px 8px：</p>
+                    <p class="c_padd_4_8 c_bg_blue c_text_white">
+                        c_padd_4_8
+                    </p>
+                </li>
+                <li>
+                    <p>6px 8px：</p>
+                    <p class="c_padd_6_8 c_bg_blue c_text_white">
+                        c_padd_6_8
+                    </p>
+                </li>
+                <li>
+                    <p>2px 10px：</p>
+                    <p class="c_padd_2_10 c_bg_orange c_text_white">
+                        c_padd_2_10
+                    </p>
+                </li>
+                <li>
+                    <p>4px 10px：</p>
+                    <p class="c_padd_4_10 c_bg_orange c_text_white">
+                        c_padd_4_10
+                    </p>
+                </li>
+                <li>
+                    <p>6px 10px：</p>
+                    <p class="c_padd_6_10 c_bg_orange c_text_white">
+                        c_padd_6_10
+                    </p>
+                </li>
+                <li>
+                    <p>8px 10px：</p>
+                    <p class="c_padd_8_10 c_bg_orange c_text_white">
+                        c_padd_8_10
+                    </p>
+                </li>
+                <li>
+                    <p>2px 16px：</p>
+                    <p class="c_padd_2_16 c_bg_green c_text_white">
+                        c_padd_2_16
+                    </p>
+                </li>
+                <li>
+                    <p>4px 16px：</p>
+                    <p class="c_padd_4_16 c_bg_green c_text_white">
+                        c_padd_4_16
+                    </p>
+                </li>
+                <li>
+                    <p>6px 16px：</p>
+                    <p class="c_padd_6_16 c_bg_green c_text_white">
+                        c_padd_6_16
+                    </p>
+                </li>
+                <li>
+                    <p>8px 16px：</p>
+                    <p class="c_padd_8_16 c_bg_green c_text_white">
+                        c_padd_8_16
+                    </p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <p>2px(四周相同)：</p>
+                    <div class="c_padd_2 c_bg_blue c_text_white">
+                        c_padd_2
+                    </div>
+                </li>
+                <li>
+                    <p>4px：</p>
+                    <div class="c_padd_4 c_bg_blue c_text_white">
+                        c_padd_4
+                    </div>
+                </li>
+                <li>
+                    <p>6px：</p>
+                    <div class="c_padd_6 c_bg_blue c_text_white">
+                        c_padd_6
+                    </div>
+                </li>
+                <li>
+                    <p>8px：</p>
+                    <div class="c_padd_8 c_bg_blue c_text_white">
+                        c_padd_8
+                    </div>
+                </li>
+                <li>
+                    <p>10px：</p>
+                    <div class="c_padd_10 c_bg_blue c_text_white">
+                        c_padd_10
+                    </div>
+                </li>
+                <li>
+                    <p>20px：</p>
+                    <div class="c_padd_20 c_bg_blue c_text_white">
+                        c_padd_20
+                    </div>
+                </li>
+                <li>
+                    <p>50px：</p>
+                    <div class="c_padd_50 c_bg_blue c_text_white">
+                        c_padd_50
+                    </div>
+                </li>
+            </ul>
+            <blockquote class="layui-elem-quote">
+                更多使用方式：
+                四周相同的样式也可单独某一边使用(上=t，下=b，左=l，右=r)，比如：c_padd_t_2=内上边距2px，以下是部分样式效果。
+            </blockquote>
+            <ul>
+                <li>
+                    <p>上边距10px：</p>
+                    <div class="c_padd_t_10 c_bg_blue c_text_white">
+                        c_padd_t_10
+                    </div>
+                </li>
+                <li>
+                    <p>下边距10px：</p>
+                    <div class="c_padd_b_10 c_bg_blue c_text_white">
+                        c_padd_b_10
+                    </div>
+                </li>
+                <li>
+                    <p>左边距10px：</p>
+                    <div class="c_padd_l_10 c_bg_blue c_text_white">
+                        c_padd_l_10
+                    </div>
+                </li>
+                <li>
+                    <p>右边距10px：</p>
+                    <div class="c_padd_r_10 c_bg_blue c_text_white">
+                        c_padd_r_10
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <h1 id="c_marg">外边距</h1>
+        <hr class="layui-bg-gray">
+        <ul>
+            <li>
+                <p>2px(四周相同)：</p>
+                <div class="c_bord_gray_m">
+                    <div class="c_marg_2 c_bg_gray_m c_text_white">
+                        c_marg_2
+                    </div>
+                </div>
+            </li>
+            <li>
+                <p>4px：</p>
+                <div class="c_bord_gray_m">
+                    <div class="c_marg_4 c_bg_gray_m c_text_white">
+                        c_marg_4
+                    </div>
+                </div>
+            </li>
+            <li>
+                <p>6px：</p>
+                <div class="c_bord_gray_m">
+                    <div class="c_marg_6 c_bg_gray_m c_text_white">
+                        c_marg_6
+                    </div>
+                </div>
+            </li>
+            <li>
+                <p>8px：</p>
+                <div class="c_bord_gray_m">
+                    <div class="c_marg_8 c_bg_gray_m c_text_white">
+                        c_marg_8
+                    </div>
+                </div>
+            </li>
+            <li>
+                <p>10px：</p>
+                <div class="c_bord_gray_m">
+                    <div class="c_marg_10 c_bg_gray_m c_text_white">
+                        c_marg_10
+                    </div>
+                </div>
+            </li>
+            <li>
+                <p>20px：</p>
+                <div class="c_bord_gray_m">
+                    <div class="c_marg_20 c_bg_gray_m c_text_white">
+                        c_marg_20
+                    </div>
+                </div>
+            </li>
+            <li>
+                <p>30px：</p>
+                <div class="c_bord_gray_m">
+                    <div class="c_marg_30 c_bg_gray_m c_text_white">
+                        c_marg_30
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <blockquote class="layui-elem-quote">
+            更多使用方式：
+            四周相同的样式也可单独某一边使用(上=t，下=b，左=l，右=r)，比如：c_marg_t_2=外上边距2px，以下是部分样式效果。
+        </blockquote>
+        <ul>
+            <li>
+                <p>上边距10px：</p>
+                <div class="c_bord_gray_m">
+                    <div class="c_marg_t_10 c_bg_gray_m c_text_white">
+                        c_marg_t_10
+                    </div>
+                </div>
+            </li>
+            <li>
+                <p>下边距10px：</p>
+                <div class="c_bord_gray_m">
+                    <div class="c_marg_b_10 c_bg_gray_m c_text_white">
+                        c_marg_b_10
+                    </div>
+                </div>
+            </li>
+            <li>
+                <p>左边距10px：</p>
+                <div class="c_bord_gray_m">
+                    <div class="c_marg_l_10 c_bg_gray_m c_text_white">
+                        c_marg_l_10
+                    </div>
+                </div>
+            </li>
+            <li>
+                <p>右边距10px：</p>
+                <div class="c_bord_gray_m">
+                    <div class="c_marg_r_10 c_bg_gray_m c_text_white">
+                        c_marg_r_10
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <h1 id="c_posi">定位</h1>
+        <hr class="layui-bg-gray">
+        <ul>
+            <li>
+                <p>相对定位：</p>
+                <div class="c_relative c_bord_gray_m c_padd_6_10 c_width_200">
+                    c_relative(相对定位)
+                    <div class="c_absolute c_bg_red c_text_white c_radi_30 c_padd_2_8" style="right:-80px;top:-10px">
+                        c_absolute(绝对定位)
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <h1 id="c_float">元素浮动</h1>
+        <hr class="layui-bg-gray">
+        <ul>
+            <li>
+                <p>float left：</p>
+                <div class="c_inline_b c_bord_gray_m c_text_gray c_padd_4_8 c_width_150">
+                    <div class="c_left c_radi_2 cc_btn_m2 cc_btn_blue c_marg_2">c_left,</div>
+                    <div class="c_left c_radi_2 cc_btn_m2 cc_btn_blue c_marg_2">&nbsp c_left</div>
+                </div>
+            </li>
+            <li>
+                <p>float left+clear left：</p>
+                <div class="c_inline_b c_bord_gray_m c_text_gray c_padd_4_8 c_width_150">
+                    <div class="c_left c_radi_2 cc_btn_m2 cc_btn_blue c_marg_2">c_left</div>
+                    <div class="c_left c_clea_l c_radi_2 cc_btn_m2 cc_btn_blue c_marg_2">c_clea_l</div>
+                    <br />
+                </div>
+            </li>
+            <li>
+                <p>float right：</p>
+                <div class="c_inline_b c_bord_gray_m c_text_gray c_padd_4_8 c_width_150">
+                    <div class="c_right c_radi_2 cc_btn_m2 cc_btn_blue c_marg_2">c_right</div>
+                    <div class="c_right c_radi_2 cc_btn_m2 cc_btn_blue c_marg_2">c_right</div>
+                </div>
+            </li>
+            <li>
+                <p>float right+clear right：</p>
+                <div class="c_inline_b c_bord_gray_m c_text_gray c_padd_4_8 c_width_150">
+                    <div class="c_right c_radi_2 cc_btn_m2 cc_btn_blue c_marg_2">c_right</div>
+                    <div class="c_right c_clea_r c_radi_2 cc_btn_m2 cc_btn_blue c_marg_2">c_clea_r</div>
+                    <br />
+                </div>
+            </li>
+        </ul>
+
+        <h1 id="c_line_h">行高</h1>
+        <hr class="layui-bg-gray">
+        <ul>
+            <li>
+                <p>c_line_h_1p5(1.5倍行高)：</p>
+                <div class="c_line_h_1p5 c_text_gray c_padd_6_10 c_width_100">
+                    abcd123<br />
+                    abcd123
+                </div>
+            </li>
+            <li>
+                <p>c_line_h_2(2倍)：</p>
+                <div class="c_line_h_2 c_text_gray c_padd_6_10 c_width_100">
+                    abcd123<br />
+                    abcd123
+                </div>
+            </li>
+            <li>
+                <p>c_line_h_2p5(2.5倍)：</p>
+                <div class="c_line_h_2p5 c_text_gray c_padd_6_10 c_width_100">
+                    abcd123<br />
+                    abcd123
+                </div>
+            </li>
+            <li>
+                <p>c_line_h_3(3倍)：</p>
+                <div class="c_line_h_3 c_text_gray c_padd_6_10 c_width_100">
+                    abcd123<br />
+                    abcd123
+                </div>
+            </li>
+        </ul>
+
+        <h1 id="c_over">内容溢出显示方式</h1>
+        <hr class="layui-bg-gray">
+        <ul>
+            <li>
+                <p>c_over_auto：</p>
+                <div class="c_over_auto c_bord_gray_m c_text_gray c_padd_6_10 c_width_100 c_heigth_50">
+                    <div class="c_bg_red c_width_200 c_heigth_100">c_over_auto</div>
+                </div>
+            </li>
+            <li>
+                <p>c_over_y_auto：</p>
+                <div class="c_over_y_auto c_bord_gray_m c_text_gray c_padd_6_10 c_width_100 c_heigth_50">
+                    <div class="c_bg_red c_width_200 c_heigth_100">c_over_y_auto</div>
+                </div>
+            </li>
+            <li>
+                <p>c_over_x_auto：</p>
+                <div class="c_over_x_auto c_bord_gray_m c_text_gray c_padd_6_10 c_width_100 c_heigth_50">
+                    <div class="c_bg_red c_width_200 c_heigth_100">c_over_x_auto</div>
+                </div>
+            </li>
+            <li>
+                <p>c_over_hidden：</p>
+                <div class="c_over_hidden c_bord_gray_m c_text_gray c_padd_6_10 c_width_100 c_heigth_50">
+                    <div class="c_bg_red c_width_200 c_heigth_100">c_over_hidden</div>
+                </div>
+            </li>
+            <li>
+                <p>c_text_over_elli：</p>
+                <p class="c_text_over_elli c_bord_gray_m c_text_gray c_padd_6_10 c_width_100" title="文本超出时显示省略号">
+                    文本超出时显示省略号
+                </p>
+            </li>
+        </ul>
+
+        <h1 id="c_ul_list">列表序号</h1>
+        <hr class="layui-bg-gray">
+        <ul>
+            <li>
+                <p>c_ul_disc：</p>
+                <ul class="c_ul_disc c_ul_list_item c_text_gray c_padd_6_10">
+                    <li>列表项</li>
+                    <li>列表项</li>
+                </ul>
+            </li>
+            <li>
+                <p>c_ul_squa：</p>
+                <ul class="c_ul_squa c_ul_list_item c_text_gray c_padd_6_10">
+                    <li>列表项</li>
+                    <li>列表项</li>
+                </ul>
+            </li>
+            <li>
+                <p>c_ul_deci：</p>
+                <ul class="c_ul_deci c_ul_list_item c_text_gray c_padd_6_10">
+                    <li>列表项</li>
+                    <li>列表项</li>
+                </ul>
+            </li>
+            <li>
+                <p>c_ul_lower_a：</p>
+                <ul class="c_ul_lower_a c_ul_list_item c_text_gray c_padd_6_10">
+                    <li>列表项</li>
+                    <li>列表项</li>
+                </ul>
+            </li>
+            <li>
+                <p>c_ul_upper_a：</p>
+                <ul class="c_ul_upper_a c_ul_list_item c_text_gray c_padd_6_10">
+                    <li>列表项</li>
+                    <li>列表项</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h1 id="cc_btn">按钮组件</h1>
+        <hr class="layui-bg-gray">
+
+        <blockquote class="layui-elem-quote">组件样式：后缀有_p表示大1号(plus)，后缀有_p2表示大2号，后缀有_m表示小1号(minus)。</blockquote>
+
+        <div>
+            <ul>
+                <li>
+                    <p>按钮组件-标准：</p>
+                    <div class="cc_btn c_radi_2 c_bord_gray_m">
+                        cc_btn c_bord_gray_m
+                    </div>
+                </li>
+                <li>
+                    <p>按钮组件-小1号：</p>
+                    <div class="cc_btn_m c_radi_2 c_bord_gray_m">
+                        cc_btn_m c_bord_gray_m
+                    </div>
+                </li>
+                <li>
+                    <p>按钮组件-小2号：</p>
+                    <div class="cc_btn_m2 c_radi_2 c_bord_gray_m">
+                        cc_btn_m2 c_bord_gray_m
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <p>按钮组件-标准绿色：</p>
+                    <div class="cc_btn cc_btn_green c_radi_2">
+                        cc_btn cc_btn_green
+                    </div>
+                </li>
+                <li>
+                    <p>按钮组件-标准橙色：</p>
+                    <div class="cc_btn cc_btn_orange c_radi_2">
+                        cc_btn cc_btn_orange
+                    </div>
+                </li>
+                <li>
+                    <p>按钮组件-标准蓝色：</p>
+                    <div class="cc_btn cc_btn_blue c_radi_2">
+                        cc_btn cc_btn_blue
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <h1 id="cc_label">标签组件</h1>
+        <hr class="layui-bg-gray">
+        <ul>
+            <li>
+                <p>默认标签：</p>
+                <div class="cc_label">
+                    cc_label
+                </div>
+            </li>
+            <li>
+                <p>必填标签：</p>
+                <div class="cc_label cc_label_must">
+                    cc_label cc_label_must
+                </div>
+            </li>
+        </ul>
+
+        <!--<h1>内边距</h1>
+        <hr class="layui-bg-gray">
+        <ul>
+            <li>
+                <p>圆角2px：</p>
+                <div class="c_radi_2 c_bg_blue c_text_white c_padd_6_10">
+                    c_radi_2
+                </div>
+            </li>
+        </ul>-->
+
+        <h1 id="download">下载</h1>
+        <hr class="layui-bg-gray">
+        <ul>
+            <li>
+                <p>最新版本：v1.4.1，请点击右键->另存为</p>
+                <a class="cc_btn cc_btn_green" href="umi.v1.4.1.css">
+                    下载umi.css
+                </a>
+                <a class="cc_btn cc_btn_green" href="umi.v1.4.1.min.css">
+                    下载umi.min.css
+                </a>
+            </li>
+        </ul>
+
+        <div class="c_bg_gray_m c_padd_30 c_text_center c_line_h_3 c_marg_t_30">
+            <p>© 2018 <a href="http://hua-mi.cn" target="_blank">华米软件</a> MIT license</p>
+            <p><a href="http://hua-mi.cn" target="_blank"><img src="http://hua-mi.cn/images/hua-mi.logo.png" style="height:50px" /></a> </p>
+            <p>苏州华米软件研发</p>
+        </div>
+    </div>
+
+    <script src="layui/layui.js" charset="utf-8"></script>
+    <!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
+    <script>
+        layui.use('element', function () {
+            var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+        });
+    </script>
+</body>
+</html>
