@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>优米CSS点缀样式库(umi.css)官网</title>
-    <meta name="Author" content="苏州华米软件(hua-mi.cn)" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="优米CSS点缀样式库(umi.css)解决web前端页面布局的最后一里路。在对web页面排版布局时，经常有琐碎的细节要另外写样式，umi.css样式库将最常用的碎片样式整合起来，并统一了样式命名规则。
+                可将umi.css理解为点缀样式库。umi.css可与任何web框架结合使用。简单、易记、通用，是优米CSS样式库的设计风格，您可以应用在任何类型的Web项目中，并兼容所有版本的浏览器。
+                优米CSS免费开源，没有商业用途限制。" />
+    <meta name=" author" content="苏州华米软件(hua-mi.cn)" />
     <link rel="shortcut icon" href="content/images/umi.css-logo-v1.ico" />
-    <link rel="stylesheet" type="text/css" href="umi.v1.4.1.css">
+    <link rel="stylesheet" type="text/css" href="umi.v1.5.1.css">
     <link rel="stylesheet" type="text/css" href="layui/css/layui.css">
     <style type="text/css">
         .c_width_200 {
@@ -73,6 +77,7 @@
         }
 
         .c_demo {
+            margin-left: 220px;
             margin-top: 60px;
         }
 
@@ -91,6 +96,16 @@
         .c_text_indent_26 p {
             text-indent: 26px;
         }
+
+        @media only screen and (max-width: 960px) {
+            .c_left_panel, .layui-nav {
+                display: none;
+            }
+
+            .c_demo {
+                margin-left: 0px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -101,7 +116,8 @@
             <ul class="layui-nav">
                 <li class="layui-nav-item"><a href="#about">关于umi.css</a></li>
                 <li class="layui-nav-item"><a href="#download">下载</a></li>
-                <li class="layui-nav-item"><a href="http://app.you-mi.cn/Home/Search/开源项目" target="_blank">社区</a></li>
+                <li class="layui-nav-item"><a href="https://github.com/hua-mi/umi-css" target="_blank">开源社区</a></li>
+                <li class="layui-nav-item"><a href="http://app.you-mi.cn/Home/Search/开源项目" target="_blank">交流</a></li>
             </ul>
         </div>
     </div>
@@ -131,11 +147,12 @@
                 <dl class="layui-nav-child">
                     <dd><a href="#cc_btn">按钮组件</a></dd>
                     <dd><a href="#cc_label">标签组件</a></dd>
+                    <dd><a href="#cc_check">选项组件(v1.5.1新增)</a></dd>
                 </dl>
             </li>
         </ul>
     </div>
-    <div id="about" style="margin-left:220px" class="c_demo">
+    <div id="about" class="c_demo">
         <blockquote class="layui-elem-quote c_marg_10 c_line_h_2 c_text_indent_26">
             <h2>优米CSS点缀样式库(umi.css)</h2>
             <p>
@@ -158,6 +175,7 @@
                 <li><span class="c_text_red_p">规则4：</span>上下左右并行样式。如"c_padd_4_10"即"padding:4px 10px"。</li>
                 <li><span class="c_text_red_p">规则5：</span>取极为常见的英文首字母。如上=t，下=b，左=l，右=r，背景background=bg</li>
                 <li><span class="c_text_red_p">规则6：</span>后缀有_p表示效果增强或加大(plus)，有_m表示效果减弱或减小(minus)。如c_red_p表示深红色，c_red_m表示浅红色。</li>
+                <li><span class="c_text_red_p">规则7：</span>(v1.5.0新增)后缀有_all表示所有子元素都应用此样式。</li>
 
             </ul>
             <p>如果您要对umi.css进行拓展，建议您新建一个样式文件umi.ext.css，这样当umi.css有更新时，不会影响您自己拓展的样式。</p>
@@ -1225,6 +1243,46 @@
             </li>
         </ul>
 
+        <h1 id="cc_check">选项组件(v1.5.1新增，限CSS3环境)</h1>
+        <hr class="layui-bg-gray">
+        <p class="c_line_h_2">勾选框-默认风格：</p>
+        <ul>
+            <li>
+                <label class="cc_check"><input type="checkbox" value="V" checked class="rights e_view" /><span>勾选框(cc_check)</span></label>
+            </li>
+            <li>
+                <label class="cc_check"><input type="checkbox" value="V" checked disabled class="rights e_view" /><span>已禁用</span></label>
+            </li>
+            <li>
+                <label class="cc_radio"><input type="radio" name="R1" value="V" class="rights e_view" /><span>单选项1(cc_radio)</span></label>
+            </li>
+            <li>
+                <label class="cc_radio"><input type="radio" name="R1" value="V" checked class="rights e_view" /><span>单选项2</span></label>
+            </li>
+            <li>
+                <label class="cc_radio"><input type="radio" name="R2" value="V" checked disabled class="rights e_view" /><span>已禁用</span></label>
+            </li>
+        </ul>
+        <p class="c_line_h_2">勾选框-风格2：</p>
+        <ul>
+            <li>
+                <label class="cc_check cc_check_style2"><input type="checkbox" value="V" checked class="rights e_view" /><span>勾选框(cc_check cc_check_style2)</span></label>
+            </li>
+            <li>
+                <label class="cc_check cc_check_style2"><input type="checkbox" value="V" checked disabled class="rights e_view" /><span>已禁用</span></label>
+            </li>
+            <li>
+                <label class="cc_radio cc_radio_style2"><input type="radio" name="R3" value="V" class="rights e_view" /><span>单选项1(cc_radio cc_radio_style2)</span></label>
+            </li>
+            <li>
+                <label class="cc_radio cc_radio_style2"><input type="radio" name="R3" value="V" checked class="rights e_view" /><span>单选项2</span></label>
+            </li>
+            <li>
+                <label class="cc_radio cc_radio_style2"><input type="radio" name="R4" value="V" checked disabled class="rights e_view" /><span>已禁用</span></label>
+
+            </li>
+        </ul>
+
         <!--<h1>内边距</h1>
         <hr class="layui-bg-gray">
         <ul>
@@ -1240,11 +1298,11 @@
         <hr class="layui-bg-gray">
         <ul>
             <li>
-                <p>最新版本：v1.4.1，请点击右键->另存为</p>
-                <a class="cc_btn cc_btn_green" href="umi.v1.4.1.css">
+                <p>最新版本：v1.5.1，请点击右键->另存为</p>
+                <a class="cc_btn cc_btn_green" href="umi.v1.5.1.css">
                     下载umi.css
                 </a>
-                <a class="cc_btn cc_btn_green" href="umi.v1.4.1.min.css">
+                <a class="cc_btn cc_btn_green" href="umi.v1.5.1.min.css">
                     下载umi.min.css
                 </a>
             </li>
@@ -1254,6 +1312,7 @@
             <p>© 2018 <a href="http://hua-mi.cn" target="_blank">华米软件</a> MIT license</p>
             <p><a href="http://hua-mi.cn" target="_blank"><img src="http://hua-mi.cn/images/hua-mi.logo.png" style="height:50px" /></a> </p>
             <p>苏州华米软件研发</p>
+            <script src="https://s19.cnzz.com/z_stat.php?id=1273056733&web_id=1273056733" language="JavaScript"></script>
         </div>
     </div>
 
